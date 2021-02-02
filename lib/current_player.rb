@@ -47,14 +47,19 @@ def current_player(board)
 end
 
 def won?(board)
+  winning_combo = nil
+  
   WIN_COMBINATIONS.each do |combo|
   
   position_1 = combo[0]
   position_2 = combo[1]
   position_3 = combo[2]
 
-  board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X"
-  board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
+  if board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X"
+    
+    winning_combo = combo
+    
+  elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
   
 end
   
