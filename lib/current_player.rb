@@ -64,3 +64,5 @@ def won?(board)
   
   end
 end
+
+winning_combo
