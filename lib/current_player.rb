@@ -20,6 +20,10 @@ end
 def input_to_index(input)
   x = input_to_i - 1
 end
+
+def move(board, index, token)
+  board[index] = token
+end
 board.count do
   cell != ""
   end
