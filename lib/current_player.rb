@@ -27,6 +27,8 @@ end
 
 def position_taken?(board, index)
   board[index] != " "
+end  
+
 board.count do
   cell != ""
   end
