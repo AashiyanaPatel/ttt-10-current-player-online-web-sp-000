@@ -17,6 +17,9 @@ def display_board(board)
    puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+def input_to_index(input)
+  x = input_to_i - 1
+end
 board.count do
   cell != ""
   end
