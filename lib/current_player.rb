@@ -60,8 +60,7 @@ def won?(board)
     winning_combo = combo
     
   elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
-  
-  winning_combo = combo
+   winning_combo = combo
   
 end
   
